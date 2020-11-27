@@ -1,10 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Home</title>
+  <title>Morse Expert</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    
+<center>
+<h1>Morse Expert</h1>
+<h2>Morse Code Decoder for Android</h2>
+<h3>freeware</h3>
+<i>Copyright © 2020 Alex Shovkoplyas VE3NEA</i>
+<p><font color="red">Beta! <a href="alshovk@dxatlas.com">Email me</a> to become a beta tester.</font></p>
+<br/><br/>
+<img src="VerticalScreen.png">
+</center>
+
+<br/><br/>
+<h2>Overview</h2>
+<p>Morse Expert decodes Morse Code audio to text. The audio may come either from the built-in microphone or from another device, such as a radio, via an audio cable. Decoding is performed using the same algorithms as in
+<a href="http://dxatlas.com/CwSkimmer/">CW Skimmer</a>.
+</p>
+
+<br/><br/>
+<h2>Download</h3>
+<p>Get Morse Expert on Google Play:
+
+<br>
+<a href='http://play.google.com/store/apps/details?id=com.ve3nea.morse_expert&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="max-height: 60px; width: auto;" alt="Get it on Google Play" src="en_badge_web_generic.png"></a>
+<br><font color="red"> This button will work once the app is officially released.</font>
+</p>
+
+<br/><br/>
+<h2>Text Selection Mode</h2>
+<p>
+A long-click on the decoded text switches the app to the text selection mode. Use the selection handles to adjust your selection,
+then use the Selection menu to copy, share or save selected text. Decoding is suspended in the selection mode, tap outside of your selection to resume decoding.
+</p>
+<p>
+The Save command saves decoded text to the <i>MorseExpert</i> folder on your phone. To copy the file to your PC,
+connect the phone to your machine with a USB cable.
+
+<center>
+<img src="Folder.png">
+</center>
+</p>
+
+<br/><br/>
+<h2>Frequency Lock Mode</h3>
+
+<p>By default, if there is more than one signal in the passband, the decoder switches automatically 
+between the signals. A tap on the waterfall display locks the decoder frequency, and the green triangle
+<img src="GreenTri.png" />
+changes its color to yellow
+<img src="YellowTri.png" /> ,
+indicating the lock mode. A second tap on the waterfall disables the frequency lock.
+</p>
+
+<br/><br/>
+<h2>Ham Radio Mode</h2>
+
+<p>The Settings screen allows you to switch between the default, <em>General Text</em> mode, 
+and the <em>Ham Radio QSO</em> mode. In the latter mode, the app performs extra processing of the decoded text to 
+improve word segmentation and highlight the callsigns and special words, as shown on this screenshot:
+</p>
+
+<center>
+<img src="HamMessage.png">
+</center>
+
+<br/><br/>
+<h2>Save Signals Command</h2>
+<p>
+This menu command is available only in the beta version of the app. It saves 20 seconds of decoding data to a binary file that the you can send to the author to illustrate your report.
+</p>
+
+
+<br/><br/>
+<h2>Reducing Echo</h2>
+<p>
+Morse Expert can decode audio from the microphone, but acoustic echo picked up by the mic may degrade decoding accuracy, or even  completely destroy decoding.</p>
+<p>I used the 
+<a href="https://www.youtube.com/watch?v=_J8YcQETyTw">Morse Letters</a> video uploaded by someone to YouTube to test the effect of the echo.
+The first screenshot was taken with the aduio played back via a speaker and picked up by the microphone,
+the second one was taken when the audio was fed to the smartphone through a cable, as described in the next section. The tails after every Morse element visible on the first screenshot made decoding impossible, while the audio fed via the cable was decoded perfectly.
+</p>
+
+<center>
+<img src="Echo.png">
+</center>
+
+<p>
+I strongly recommend the use of a cable, but if this is not an option, try to place the phone's mic as close to the speaker as possible, to minimize the echo.
+</p>
+<p>
+When using a cable to feed the audio, do not connect the USB cable to your phone, otherwise noise pickup may increase greatly due to a ground loop. Check the input signal level shown above the decoded text, and make sure that it is within -50..-20 dBFS. Higher levels indicate insufficient signal attenuation, ground-loop noise, or other problems.
+</p>
+
+<br/><br/>
+<h2>Audio Adapter</h2>
+<p>
+Many consumer electronic devices, as well as Amateur Radio equipment, output signas at the <i>Line-In</i> level, about 600 mV r.m.s. Such signals need to be attenuated to the <i>Microphone</i> level (a few mV) before they are fed to a smartphone. DC decoupling is also often required. I used the circuit shown below to feed the audio from my shortwave transceiver to the phone, with excellent results.
+</p>
+
+<center>
+<img src="Schematic.png">
+</center>
+
+<p>
+To build the attenuator, I used resistors salvaged from an old TV, and the 4-contact audio connector was cut from the broken earbuds. I put the components on a tiny PC board, as shown below, and protected the circuit with a heat-shrink tube.
+</p>
+
+<center>
+<img src="Attenuator.png">
+</center>
+
+<br/><br/>
+<h2>Using Morse Expert With a Radio</h2>
+<p>
+The best way to connect your phone to the radio is via the ACC connector on the rear panel of the transceiver or receivrer. Another option is the Headphones jack
+on the front panel - this also works, though it is less convenient.
+</p>
+
+<center>
+<img src="Radio.png">
+</center>
+
+<p>
+To fix the phone on top of my radio,
+I use a smartphone holder made from a paper clip. I was very proud of my invention until I discovered that it was a well-known trick :)
+</p>
+
+<center>
+<img src="Holder.png">
+</center>
+
+<br/><br/>
+<hr>
+<table width="100%"><tr>
+<td><a href="alshovk@dxatlas.com">My email</a><td><a href="http://www.dxatlas.com">My other software</a></td>
+</table>
   </body>
 </html>
