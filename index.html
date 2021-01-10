@@ -121,15 +121,18 @@ I used the circuit shown below to feed the audio from my shortwave transceiver t
 To build the attenuator, I used resistors salvaged from an old TV, and the 4-contact audio connector was cut from the broken earbuds. Such earbuds are sold for less than $1 on Ebay. Ironically, the connector alone costs several times more.
 <p>
 I put the components on a tiny PC board, as shown below, and protected the circuit with a heat-shrink tube.
-</p>
 
 <center>
 <br/>
 <img src="Attenuator.png">
 </center>
+</p>
 
+<h2>Ground Loops</h2>
 <p>
-It is not recommended to connect the audio and USB cables to the phone at the same time since noise pickup may increase greatly due to a ground loop formed by the two cables. Check the input signal level shown on the status bar above the decoded text, and make sure that it is within -50..-20 dBFS. Higher levels (-20..-1 dBFS) indicate insufficient signal attenuation, ground-loop noise, or other problems. I have discovered that the ground loop is eliminated completely usingng the "Audio Aux Noise Filter Ground Loop Isolator" that I bought on eBay
+It is not recommended to connect the audio and USB cables to the phone at the same time since noise pickup may increase greatly due to a ground loop formed by the two cables. Check the input signal level shown on the status bar above the decoded text, and make sure that it is within -50..-20 dBFS. Higher levels (-20..-1 dBFS) indicate insufficient signal attenuation, ground-loop noise, or other problems. 
+</p>
+<p> If you need to have both cables connected, e.g., to keep your smartphone charged, use an isolating transformer to break the ground loop. I have discovered that the ground loop is eliminated completely usingng the "Audio Aux Noise Filter Ground Loop Isolator" that I bought on eBay
 for $5:
 
 <center><img src="isolation_transformer.jpg"/></center>
